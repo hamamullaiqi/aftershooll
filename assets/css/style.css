@@ -1,0 +1,558 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  height: 80px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 150px;
+  flex-wrap: wrap;
+}
+
+nav li {
+  display: inline;
+  list-style-type: none;
+  margin-left: 20px;
+}
+
+nav li a {
+  text-decoration: none;
+  color: black;
+}
+
+.scrollable {
+  transform: translateY(100px);
+  opacity: 0;
+  transition: 1s all ease-in;
+}
+
+.scrollable.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.humberger {
+  display: none;
+  cursor: pointer;
+}
+
+
+
+article#navigation {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    display: none;
+    padding: 0;
+    cursor: pointer;
+    
+}
+
+#navigation img{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(255, 178, 116);
+    border-radius: 100%;
+    padding: 8px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+}
+
+
+.humberger:hover {
+  opacity: 0.7;
+}
+
+button {
+  padding: 8px 24px;
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+button:hover {
+  opacity: 0.5;
+}
+
+.bg-blue {
+  background-color: #699dee;
+  color: white;
+}
+
+.bg-orange {
+  background-color: rgba(249, 151, 70, 1);
+  color: white;
+}
+
+.blue {
+  color: #699dee;
+}
+
+article {
+  padding: 24px 150px;
+}
+
+#landing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: calc(100vh - 80px);
+}
+
+#landing .hero {
+  width: 600px;
+}
+
+.list-archive {
+  margin-top: 60px;
+  display: flex;
+}
+
+.list-archive .list-item {
+  margin-right: 40px;
+}
+
+.list-archive p {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.sub-title {
+  margin: 24px 0px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.blue-light {
+  background-color: rgba(235, 243, 250, 1);
+}
+
+#layanan .list-card {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 36px;
+}
+
+#layanan .card {
+  width: 300px;
+  position: relative;
+}
+
+#paket .card {
+  width: 300px;
+}
+
+#paket .list-card {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 36px;
+}
+
+.label-card {
+  position: absolute;
+  background-color: rgba(249, 151, 70, 1);
+  padding: 10px;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  top: -15px;
+  right: -15px;
+}
+
+.card .card-title {
+  border-radius: 8px 8px 0px 0px;
+  padding: 16px 0px;
+}
+
+.card li {
+  list-style-type: none;
+  display: flex;
+  gap: 16px;
+  font-size: 13px;
+  margin-bottom: 8px;
+  align-items: flex-start;
+}
+.card li img {
+  margin-top: 4px;
+}
+
+.card {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: white;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+
+.card .card-body {
+  padding: 20px;
+}
+
+.card .card-footer {
+  margin-top: auto;
+  margin-bottom: 16px;
+}
+
+.card-body p {
+  margin-top: 16px;
+  font-size: 12px;
+}
+
+.price {
+  margin-bottom: 30px;
+}
+
+.price h2 {
+  display: inline;
+}
+
+.orange {
+  color: rgba(249, 151, 70, 1);
+}
+
+#mapel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#mapel .left {
+  flex: 2;
+}
+
+#mapel .right {
+  flex: 3;
+}
+
+#mapel .right img {
+  margin-left: 200px;
+  width: 60%;
+}
+
+#mapel p {
+  font-size: 16px;
+  margin: 16px 0px;
+}
+
+#mentor {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#mentor .left {
+  flex: 3;
+}
+
+#mentor .right {
+  flex: 2;
+}
+
+#mentor .left img {
+  width: 60%;
+}
+
+#mentor p {
+  font-size: 16px;
+  margin: 16px 0px;
+}
+
+#testimoni .list-card {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 36px;
+}
+
+#testimoni .user {
+  display: flex;
+  align-items: center;
+}
+
+#testimoni .user .user-detail {
+  margin: 0 16px;
+}
+
+#testimoni .user .user-name {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 0px;
+}
+
+#testimoni .card {
+  width: 300px;
+  height: 200px;
+}
+
+#testimoni .user .user-school {
+  margin-top: 4px;
+}
+
+#testimoni .text-testimoni {
+  font-style: italic;
+}
+
+#testimoni .user img {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+
+.banner {
+  margin: auto;
+  padding: 50px;
+  border-radius: 8px;
+  width: 80%;
+}
+
+.banner button {
+  margin: 24px auto 0px auto;
+  display: flex;
+  align-items: center;
+}
+
+#profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+#profile .left img {
+  border-radius: 8px;
+}
+
+#profile .right h3 {
+  margin-bottom: 16px;
+}
+
+#profile .right li {
+  margin-left: 32px;
+}
+
+footer {
+  padding: 40px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 992px) {
+  body {
+    font-size: 12px;
+  }
+  nav {
+    padding: 0 40px;
+  }
+
+  nav li {
+    padding: 0;
+    margin: 0;
+  }
+
+  nav #nav-menu {
+    display: none;
+  }
+
+  nav #nav-menu.show {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    gap: 16px;
+    padding: 16px;
+    text-align: center;
+    width: 100%;
+    background-color: whitesmoke;
+    animation: in 0.5s ease-in;
+  }
+
+  @keyframes in {
+    0% {
+      opacity: 0;
+      margin-left: -100px;
+    }
+    100% {
+      opacity: 1;
+      margin-left: 0px;
+    }
+  }
+
+  .humberger {
+    display: block;
+  }
+  #humberger.hidden {
+    display: none;
+  }
+
+  #btn-close {
+    display: none;
+  }
+
+  #btn-close.show {
+    display: block;
+  }
+  article {
+    padding: 16px 40px;
+  }
+
+  article#navigation {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: none;
+    padding: 0;
+    cursor: pointer;
+    
+}
+
+  #landing {
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+  }
+  #landing .left {
+    text-align: center;
+    order: 2;
+  }
+
+  #landing .right {
+    order: 1;
+  }
+
+  .title {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  .list-archive {
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+  }
+  .list-archive .list-item {
+    margin-right: 0px;
+  }
+
+  #landing .right .hero {
+    width: 400px;
+  }
+
+  #layanan .card {
+    width: 30%;
+    position: relative;
+  }
+
+  #mapel .left {
+    flex: 1;
+  }
+
+  #mapel .right {
+    flex: 1;
+  }
+
+  #mapel .right img {
+    margin: 0;
+    width: 100%;
+  }
+
+  #mentor .left img {
+    width: 100%;
+  }
+
+  #paket .card {
+    width: 30%;
+  }
+
+  #paket .list-card {
+    justify-content: space-between;
+  }
+
+  #testimoni .card {
+    width: 30%;
+    height: 300px;
+  }
+
+  button {
+    padding: 4px 12px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .label-card {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    padding: 8px;
+  }
+  .label-card img {
+    width: 24px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .list-card {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  #landing .right .hero {
+    width: 100%;
+  }
+
+  #layanan .card {
+    width: 100%;
+    position: relative;
+  }
+
+  #paket .card {
+    width: 100%;
+  }
+
+  #testimoni .card {
+    width: 100%;
+    height: 200px;
+  }
+
+  #mapel {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #mapel .left {
+    order: 2;
+  }
+
+  #mapel .right {
+    order: 1;
+  }
+
+  #mentor {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .banner {
+    width: 100%;
+  }
+
+  #profile {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
